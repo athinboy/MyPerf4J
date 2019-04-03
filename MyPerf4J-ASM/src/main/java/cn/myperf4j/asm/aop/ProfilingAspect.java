@@ -2,6 +2,7 @@ package cn.myperf4j.asm.aop;
 
 import cn.myperf4j.asm.ASMRecorderMaintainer;
 import cn.myperf4j.base.config.ProfilingParams;
+import cn.myperf4j.bridge.Bridge;
 import cn.myperf4j.core.MethodTagMaintainer;
 import cn.myperf4j.core.recorder.Recorder;
 import cn.myperf4j.base.util.Logger;
@@ -21,6 +22,10 @@ public final class ProfilingAspect {
 
     public static void profiling(final long startNanos, final int methodTagId) {
         try {
+            if (true == Bridge.isStopRecord()) {
+                return;
+            }
+
             if (!running) {
                 Logger.warn("ProfilingAspect.profiling(): methodTagId=" + methodTagId + ", methodTag=" + MethodTagMaintainer.getInstance().getMethodTag(methodTagId) + ", startNanos: " + startNanos + ", IGNORED!!!");
                 return;

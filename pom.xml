@@ -9,6 +9,8 @@
         <module>MyPerf4J-Core</module>
         <module>MyPerf4J-ASM</module>
         <module>MyPerf4J-Base</module>
+        <module>MyPerf4J-Bridge</module>
+        <module>TestWeb</module>
     </modules>
     <name>MyPerf4J</name>
 
