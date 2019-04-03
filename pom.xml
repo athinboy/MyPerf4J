@@ -11,6 +11,7 @@
         <module>MyPerf4J-Base</module>
         <module>MyPerf4J-Bridge</module>
         <module>TestWeb</module>
+        <module>TestConsole</module>
     </modules>
     <name>MyPerf4J</name>
 
