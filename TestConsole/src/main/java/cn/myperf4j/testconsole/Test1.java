@@ -15,14 +15,18 @@ public class Test1 {
 
     public static void main(String[] args) throws IOException {
 
-        System.in.read();
+        int s = System.in.read();
         cn.myperf4j.bridge.Bridge.setStopRecord(true);
 
-        System.in.read();
+        System.out.println(s);
+        s = System.in.read();
 
         cn.myperf4j.bridge.Bridge.setStopRecord(false);
+        System.out.println(s);
 
-        System.in.read();
+        s = System.in.read();
+        System.out.println(s);
+
     }
 
 }
