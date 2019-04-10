@@ -1,0 +1,106 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClassFileUtils<MyPerf4J-ASM>",
+            "request": "launch",
+            "mainClass": "MyPerf4J.ClassFileUtils",
+            "projectName": "MyPerf4J-ASM"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OpcodesTest<MyPerf4J-ASM>",
+            "request": "launch",
+            "mainClass": "MyPerf4J.OpcodesTest",
+            "projectName": "MyPerf4J-ASM"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<MyPerf4J-ASM>",
+            "request": "launch",
+            "mainClass": "MyPerf4J.dynamic.Test",
+            "projectName": "MyPerf4J-ASM"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<MyPerf4J-ASM>(1)",
+            "request": "launch",
+            "mainClass": "MyPerf4J.test1.Test",
+            "projectName": "MyPerf4J-ASM"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ILoggerTest<MyPerf4J-Base>",
+            "request": "launch",
+            "mainClass": "cn.myperf4j.base.test.ILoggerTest",
+            "projectName": "MyPerf4J-Base"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateUtils<MyPerf4J-Base>",
+            "request": "launch",
+            "mainClass": "cn.myperf4j.base.util.DateUtils",
+            "projectName": "MyPerf4J-Base"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PkgExpUtils<MyPerf4J-Base>",
+            "request": "launch",
+            "mainClass": "cn.myperf4j.base.util.PkgExpUtils",
+            "projectName": "MyPerf4J-Base"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RecorderBenchmarkTest<MyPerf4J-Core>",
+            "request": "launch",
+            "mainClass": "MyPerf4J.RecorderBenchmarkTest",
+            "projectName": "MyPerf4J-Core"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test1<TestConsole>",
+            "request": "launch",
+            "mainClass": "cn.myperf4j.testconsole.Test1",
+            "projectName": "TestConsole"
+            
+        }
+    ]
+}
