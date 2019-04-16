@@ -46,6 +46,11 @@ public final class ProfilingAspect {
     //InvocationHandler.invoke(Object proxy, Method method, Object[] args)
     public static void profiling(final long startNanos, final Method method) {
         try {
+
+            if (true == Bridge.isStopRecord()) {
+                return;
+            }
+
             if (!running) {
                 Logger.warn("ProfilingAspect.profiling(): method=" + method + ", startNanos: " + startNanos + ", IGNORED!!!");
                 return;
